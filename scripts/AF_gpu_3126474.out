@@ -1,0 +1,23 @@
+CUDA_VISIBLE_DEVICES=0
+/home/users/allstaff/iskander.j/.local/lib/python3.8/site-packages/absl/flags/_validators.py:203: UserWarning: Flag --preset has a non-None default value; therefore, mark_flag_as_required will pass even if flag is not specified in the command line!
+  warnings.warn(
+I1104 19:45:27.896697 47698803011264 templates.py:836] Using precomputed obsolete pdbs /vast/projects/alphafold/databases/pdb_mmcif/obsolete.dat.
+I1104 19:45:28.303750 47698803011264 tpu_client.py:54] Starting the local TPU driver.
+I1104 19:45:28.334829 47698803011264 xla_bridge.py:214] Unable to initialize backend 'tpu_driver': Not found: Unable to find driver in registry given worker: local://
+I1104 19:45:28.720951 47698803011264 xla_bridge.py:214] Unable to initialize backend 'tpu': Invalid argument: TpuPlatform is not available.
+I1104 19:45:29.967669 47698803011264 run_alphafold.py:274] Have 1 models: ['model_1']
+I1104 19:45:29.968329 47698803011264 run_alphafold.py:287] Using random seed 4851635908528342665 for the data pipeline
+Traceback (most recent call last):
+  File "/stornext/HPCScratch/home/iskander.j/git_projects/alphafold2.0/run_alphafold.py", line 317, in <module>
+    app.run(main)
+  File "/home/users/allstaff/iskander.j/.local/lib/python3.8/site-packages/absl/app.py", line 312, in run
+    _run_main(main, args)
+  File "/home/users/allstaff/iskander.j/.local/lib/python3.8/site-packages/absl/app.py", line 258, in _run_main
+    sys.exit(main(argv))
+  File "/stornext/HPCScratch/home/iskander.j/git_projects/alphafold2.0/run_alphafold.py", line 291, in main
+    predict_structure(
+  File "/stornext/HPCScratch/home/iskander.j/git_projects/alphafold2.0/run_alphafold.py", line 136, in predict_structure
+    feature_dict = data_pipeline.process(
+  File "/stornext/HPCScratch/home/iskander.j/git_projects/alphafold2.0/alphafold/data/pipeline.py", line 123, in process
+    with open(input_fasta_path) as f:
+FileNotFoundError: [Errno 2] No such file or directory: '../../../input/query_colab.fasta'

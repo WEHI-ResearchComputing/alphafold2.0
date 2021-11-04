@@ -1,0 +1,11 @@
+CUDA_VISIBLE_DEVICES=0
+/home/users/allstaff/iskander.j/.local/lib/python3.8/site-packages/absl/flags/_validators.py:203: UserWarning: Flag --preset has a non-None default value; therefore, mark_flag_as_required will pass even if flag is not specified in the command line!
+  warnings.warn(
+I1104 19:47:36.035054 47880143314624 templates.py:836] Using precomputed obsolete pdbs /vast/projects/alphafold/databases/pdb_mmcif/obsolete.dat.
+I1104 19:47:36.332625 47880143314624 tpu_client.py:54] Starting the local TPU driver.
+I1104 19:47:36.333093 47880143314624 xla_bridge.py:214] Unable to initialize backend 'tpu_driver': Not found: Unable to find driver in registry given worker: local://
+I1104 19:47:36.461782 47880143314624 xla_bridge.py:214] Unable to initialize backend 'tpu': Invalid argument: TpuPlatform is not available.
+I1104 19:47:37.649606 47880143314624 run_alphafold.py:274] Have 1 models: ['model_1']
+I1104 19:47:37.649823 47880143314624 run_alphafold.py:287] Using random seed 5249653444078353699 for the data pipeline
+I1104 19:47:37.667609 47880143314624 jackhmmer.py:130] Launching subprocess "/stornext/HPCScratch/home/iskander.j/myenvs/alphafold_gpu/bin/jackhmmer -o /dev/null -A /tmp/tmp_ole86kh/output.sto --noali --F1 0.0005 --F2 5e-05 --F3 5e-07 --incE 0.0001 -E 0.0001 --cpu 8 -N 1 /home/users/allstaff/iskander.j/scratchhome/input/query_colab.fasta /vast/projects/alphafold/databases/uniref90/uniref90.fasta"
+I1104 19:47:37.700596 47880143314624 utils.py:36] Started Jackhmmer (uniref90.fasta) query
